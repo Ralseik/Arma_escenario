@@ -4,20 +4,24 @@ int movimiento = 200;
 int inc = 1;
 int  m;
 int posx = 100;
+Estrellas fondo ;
 
  
- void setup(){
+public  void setup(){
   size(800,800);
-background(0);
-imagenfondo = loadImage("Fondo.jpg");
+
+fondo = new Estrellas();
+
 Alienimg = loadImage("Alien.png");
 
 }
 
 
 
-void draw(){
- for ( m = 0; m < 10; m++) {
+public void draw(){
+  background(0);
+ fondo.dibujar();
+  for ( m = 0; m < 10; m++) {
     //movimiento = movimiento + inc;
     posx = posx + inc;
   }
@@ -30,8 +34,7 @@ void draw(){
   //if (posx <= 10) {
    
   }
-  imageMode(CENTER);
-  image(imagenfondo,height/2,width/2, height, width);
+
   
   
   image(Alienimg,posx,100,200,200);
