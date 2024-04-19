@@ -4,7 +4,7 @@ int inc = 1;
 int  m;
 int posx = 100;
  
-public void Alien(int dis,int i,int x){
+ Alien(int dis,int i,int x){
   inc = dis;
   i= m;
   x= posx;

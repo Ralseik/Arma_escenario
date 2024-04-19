@@ -2,6 +2,7 @@
 
 Estrellas fondo ;
 Alien    enemigo;
+Nave piloto;
 
  
 public  void setup(){
@@ -9,8 +10,7 @@ public  void setup(){
 
 fondo = new Estrellas();
 enemigo = new Alien();
-
-
+piloto = new Nave();
 
 }
 
@@ -21,8 +21,7 @@ public void draw(){
  fondo.dibujar();
  enemigo.display();
  enemigo.movimiento();
-
-  
+ piloto.displaynave();
   
 }
 
