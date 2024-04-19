@@ -1,6 +1,6 @@
 class Nave{
-  PImage naveimg;
-  PVector posicion;
+private  PImage naveimg;
+private  PVector posicion;
   
  
   public Nave(){

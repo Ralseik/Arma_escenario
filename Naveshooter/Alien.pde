@@ -1,8 +1,8 @@
 class Alien{
-PImage Alienimg;
-int inc = 1;
-int  m;
-int posx = 100;
+private PImage Alienimg;
+private int inc = 1;
+private int  m;
+private int posx = 100;
  
  Alien(int dis,int i,int x){
   inc = dis;

@@ -1,8 +1,8 @@
 
 
-Estrellas fondo ;
-Alien    enemigo;
-Nave piloto ; 
+private Estrellas fondo ;
+private Alien    enemigo;
+private Nave piloto ; 
 
  
 public  void setup(){
@@ -20,6 +20,7 @@ piloto = new Nave();
 public void draw(){
   background(0);
  fondo.dibujar();
+  fondo.dibujaraliens();
  enemigo.display();
  enemigo.movimiento();
  piloto.displaynave();
