@@ -2,7 +2,7 @@
 
 Estrellas fondo ;
 Alien    enemigo;
-Nave piloto;
+Nave piloto ; 
 
  
 public  void setup(){
@@ -11,6 +11,7 @@ public  void setup(){
 fondo = new Estrellas();
 enemigo = new Alien();
 piloto = new Nave();
+
 
 }
 
@@ -24,6 +25,15 @@ public void draw(){
  piloto.displaynave();
   
 }
+public  void mousePressed(){//movimiento nave
+  
+    if(mouseButton == RIGHT){
+      piloto.navegacion(1);
+    }else{
+      piloto.navegacion(0);
+    }
+}
+      //
 
 
  
